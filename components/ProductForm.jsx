@@ -114,12 +114,12 @@ const ProductForm = ({
         <option value="">Uncategorized</option>
         {
           categories?.map(c => (
-            <option value={c._id}>{c.name}</option>
+            <option key={c._id} value={c._id}>{c.name}</option>
           ))
         }
       </select>
       {propertiesToFill.length > 0 && propertiesToFill.map(p => (
-        <div className='flex gap-1'>
+        <div key={p._id} className='flex gap-1'>
           <div>{p.name}</div>
           <select 
           value={productProperties[p.name]}

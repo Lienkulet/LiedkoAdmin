@@ -27,7 +27,7 @@ const DeleteProduct = () => {
   return (
       <Layout>
       <h1 className='text-center'>
-          Do you really want to delete "{productInfo?.title} "?
+          Do you really want to delete `{productInfo?.title}`?
         </h1><div className='flex gap-2 justify-center'>
             <button className='btn-red' onClick={() => deleteProduct()}>Yes</button>
             <button className='btn-default'
