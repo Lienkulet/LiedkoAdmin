@@ -1,10 +1,10 @@
 import { Layout } from '@/components'
 import axios from 'axios'
-import React, { use, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { toast } from 'react-hot-toast';
 import { HashLoader } from 'react-spinners';
 
-const settings = () => {
+const Settings = () => {
   const [products, setProducts] = useState();
   const [loading, setLoading] = useState(false);
   const [featuredProductId, setFeaturedProductId] = useState(null);
@@ -86,4 +86,4 @@ const settings = () => {
   )
 }
 
-export default settings
+export default Settings

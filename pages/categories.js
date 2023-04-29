@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { toast } from 'react-hot-toast';
 import { HashLoader } from 'react-spinners';
 
-const categories = () => {
+const Categories = () => {
     const [name, setName] = useState('');
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -280,4 +280,4 @@ const categories = () => {
     )
 }
 
-export default categories
+export default Categories

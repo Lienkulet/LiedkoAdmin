@@ -5,7 +5,7 @@ import axios from 'axios';
 import { HashLoader } from 'react-spinners';
 
 
-const products = () => {
+const Products = () => {
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);
 
@@ -75,5 +75,5 @@ const products = () => {
     )
 }
 
-export default products
+export default Products
 
