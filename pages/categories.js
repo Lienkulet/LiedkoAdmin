@@ -123,7 +123,7 @@ const Categories = () => {
                          backdrop-blur-sm z-50 transition duration-100 ease-in-out flex justify-center'>
                             <div className='delete top-60 rounded-lg'>
                                 <h1 className='text-center'>
-                                    Do you really want to delete "{deletedCategory.name} "?
+                                    Do you really want to delete `{deletedCategory.name}`?
                                 </h1>
                                 <div className='flex gap-2 justify-center'>
                                     <button className='btn-red'
