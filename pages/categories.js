@@ -170,7 +170,7 @@ const Categories = () => {
                         onClick={() => addProperty()}
                         className='btn-default text-sm mb-1'>Add new property</button>
                     {properties.length > 0 && properties.map((property, index) => (
-                        <div  className='flex gap-1'>
+                        <div key={index} className='flex gap-1'>
                             <input
                                 type="text"
                                 value={property.name}
