@@ -126,7 +126,7 @@ const ProductForm = ({
           onChange={e => setProductProp(p.name, e.target.value)
           }>
             {p.values.map(v => (
-              <option value={v}>{v}</option>
+              <option key={v} value={v}>{v}</option>
             ))}
           </select>
           </div>
