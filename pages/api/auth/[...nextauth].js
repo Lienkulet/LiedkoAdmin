@@ -5,8 +5,11 @@ import GoogleProvider from 'next-auth/providers/google';
 import { Admin } from '@/models/Admin';
 
 async function isAdmin(email) {
-  // return !! (await Admin.findOne({email}));
-  return true;
+  const foundAdmin = (await Admin.findOne({email}))
+  if(foundAdmin){
+    return foundAdmin;
+  }
+  // return true;
 }
 
 export const authOptions = {
