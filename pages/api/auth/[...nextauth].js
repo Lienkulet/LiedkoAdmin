@@ -8,6 +8,8 @@ async function isAdmin(email) {
   const foundAdmin = (await Admin.findOne({email}))
   if(foundAdmin){
     return foundAdmin;
+  } else {
+    return false;
   }
   // return true;
 }
