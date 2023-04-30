@@ -1,5 +1,4 @@
-import NextAuth from 'next-auth';
-import { getServerSession } from 'next-auth/server';
+import NextAuth, { getServerSession } from 'next-auth';
 import { MongoDBAdapter } from '@next-auth/mongodb-adapter';
 import clientPromise from '@/lib/mongodb';
 import GoogleProvider from 'next-auth/providers/google';
