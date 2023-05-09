@@ -1,5 +1,5 @@
 
-## Fashboard
+## Dashboard
 ![image](https://github.com/Lienkulet/Liedko/assets/104018505/497b93ff-b03e-4409-9c91-b8973f301854)
 
 ## Products page
@@ -8,10 +8,10 @@
 ## Categories page
 ![image](https://github.com/Lienkulet/Liedko/assets/104018505/d361ad0b-99df-4eb9-b88f-56c6f8b82c4d)
 
-## Orders
-![image](https://github.com/Lienkulet/Liedko/assets/104018505/12595d51-6b08-4859-92e2-1c65ed004084)
-
 ## Admins
+![image](https://github.com/Lienkulet/Liedko/assets/104018505/12595d51-6b08-4859-92e2-1c65ed004084)
+ 
+## Orders
 ![orders](https://github.com/Lienkulet/Liedko/assets/104018505/19f793ed-bb5b-4dcb-b725-92cb756be064)
 
 ## Settings
