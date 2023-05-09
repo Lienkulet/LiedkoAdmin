@@ -11,20 +11,21 @@ const Layout = ({ children }) => {
 
   if (!session) {
     return (
-      <div className='bg-blue-900 w-screen h-screen flex items-center'>
-        <div className="text-center w-full ">
-          <button onClick={() => signIn('google')} className="bg-white p-2 px-4 rounded-lg color-black font-bold">Login with Google</button>
+      <div className='bg-[#141B2D] w-screen h-screen flex items-center'>
+        <div className="text-center w-full flex flex-col items-center">
+          <h1 className="text-white font-bold mb-2">Liedko Management</h1>
+          <button onClick={() => signIn('google')} className="bg-white p-2 px-4 rounded-lg color-black font-bold w-fit">Login with Google</button>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="bg-white h-screen ">
+    <div className="bg-[#141B2D] h-screen ">
       <Head>
         <title>Liedko Admin</title>
       </Head>
-      <div className="md:hidden flex justify-between p-2 text-blue-900   text-xl font-bold">
+      <div className="md:hidden flex justify-between p-2 text-gray-300 text-xl font-bold">
 
       <Logo />
 
@@ -40,7 +41,7 @@ const Layout = ({ children }) => {
 
         <Nav  /> 
         <Toaster />
-        <div className="bg-white flex-grow mt-2 mr-2 mb-2 rounded-lg p-4 font-bold">
+        <div className="bg-[#141B2D] flex-grow mt-2 mr-2 mb-2 rounded-lg p-4 font-bold">
           {children}
         </div>
       </div>

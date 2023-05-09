@@ -39,7 +39,7 @@ const HomeStats = () => {
 
     return (
         <div>
-            <h2>Orders</h2>
+            <h2 className='text-[#4CCEAC]'>Orders</h2>
             <div className='tiles-grid'>
                 <div className='tile'>
                     <h3 className='tile-header'>Today</h3>
@@ -57,7 +57,7 @@ const HomeStats = () => {
                     <div className='tile-desc'>{ordersMonth.length} orders this month</div>
                 </div>
             </div>
-            <h2>Revenue</h2>
+            <h2 className='text-[#4CCEAC]'>Revenue</h2>
             <div className='tiles-grid'>
                 <div className='tile'>
                     <h3 className='tile-header'>Today</h3>

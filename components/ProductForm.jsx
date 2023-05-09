@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { HashLoader } from 'react-spinners';
 import { ReactSortable } from 'react-sortablejs';
 import Link from 'next/link';
+import { toast } from 'react-hot-toast';
 
 const ProductForm = ({
   _id,

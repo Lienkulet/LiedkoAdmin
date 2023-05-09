@@ -3,15 +3,17 @@ import { MongoDBAdapter } from '@next-auth/mongodb-adapter';
 import clientPromise from '@/lib/mongodb';
 import GoogleProvider from 'next-auth/providers/google';
 import { Admin } from '@/models/Admin';
+import { mongooseConnect } from '@/lib/mongoose';
 
 async function isAdmin(email) {
-  const foundAdmin = (await Admin.findOne({email}))
-  if(foundAdmin){
-    return foundAdmin;
-  } else {
-    return false;
-  }
-  // return true;
+  await mongooseConnect();
+  // const foundAdmin = (await Admin.findOne({email}))
+  // if(foundAdmin){
+  //   return foundAdmin;
+  // } else {
+  //   return false;
+  // }
+  return true;
 }
 
 export const authOptions = {

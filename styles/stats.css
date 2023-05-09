@@ -1,17 +1,17 @@
 .tile{
-    @apply bg-white shadow-md p-2 text-blue-900;
+    @apply bg-[#1F2A40] shadow-md p-20 text-blue-900 rounded-lg;
 }
 
 .tile-header{
-    @apply uppercase text-gray-500 font-bold text-xs text-center;
+    @apply uppercase text-[#4CCEAC] font-bold text-xs text-center;
 }
 
 .tile-number{
-    @apply text-3xl text-center my-1 font-bold;
+    @apply text-3xl text-center my-1 font-bold text-white;
 }
 
 .tile-desc{
-    @apply text-xs text-center text-gray-400;
+    @apply text-xs text-center text-[#4CCEAC];
 }
 
 .tiles-grid{

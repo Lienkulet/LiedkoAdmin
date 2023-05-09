@@ -7,9 +7,9 @@ import { useStateContext } from '@/context/StateContext';
 
 const Nav = () => {
     const inactiveLink = 'flex gap-1 p-1';
-    const activeLink = inactiveLink + " bg-white text-blue-900 rounded-md font-bold";
+    const activeLink = inactiveLink + " text-[#6870FA] rounded-md font-bold";
     const inactiveIcon = 'w-6 h-6';
-    const activeIcon = inactiveIcon + " text-blue-900 font-bold";
+    const activeIcon = inactiveIcon + " text-[#6870FA] font-bold";
     const router = useRouter();
     const { pathname } = router;
 
@@ -22,7 +22,7 @@ const Nav = () => {
 
     return (
         <aside className={(showNav ? 'left-0' : ' -left-full ') + ' top-0 text-white p-4 fixed w-full h-full' +
-            ' bg-blue-900 md:static md:h-full md:w-auto transition-all'}>
+            ' bg-[#1F2A40] md:static md:h-full md:w-auto transition-all'}>
             <div className='flex justify-between mb-4 mr-4'>
                 <Logo />
                 <button className='block md:hidden' onClick={() => toggleNav()}>

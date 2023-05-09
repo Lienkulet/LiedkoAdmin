@@ -22,7 +22,7 @@ const Products = () => {
     return (
         <Layout>
             <Link href={'/products/new'}
-                className='bg-blue-900 text-white py-1 px-2 rounded-md' >
+                className='bg-[#3E4396] text-white py-1 px-2 rounded-md' >
                 Add new product
             </Link>
             <table className='basic'>
@@ -31,6 +31,7 @@ const Products = () => {
                         <td>
                             Product Name
                         </td>
+                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,7 +67,7 @@ const Products = () => {
             {
                 loading ?
                 <div className='h-screen flex items-center justify-center ' >
-                    <HashLoader color='#1E3A8A' speedMultiplier={2} size={150} />
+                    <HashLoader color='#3E4396' speedMultiplier={2} size={150} />
                 </div>
                 : 
                 ''
